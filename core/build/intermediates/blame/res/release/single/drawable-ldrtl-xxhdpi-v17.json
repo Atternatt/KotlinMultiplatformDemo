@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/marc/StudioProjects/percently-android/core/build/intermediates/res/merged/release/drawable-ldrtl-xxhdpi-v17/abc_spinner_mtrl_am_alpha.9.png",
+        "source": "/Users/marc/.gradle/caches/transforms-2/files-2.1/cfdb390997c7a1b7a24d9b7d0db3580c/appcompat-1.1.0/res/drawable-ldrtl-xxhdpi-v17/abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "/Users/marc/StudioProjects/percently-android/core/build/intermediates/res/merged/release/drawable-ldrtl-xxhdpi-v17/abc_ic_menu_cut_mtrl_alpha.png",
+        "source": "/Users/marc/.gradle/caches/transforms-2/files-2.1/cfdb390997c7a1b7a24d9b7d0db3580c/appcompat-1.1.0/res/drawable-ldrtl-xxhdpi-v17/abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/marc/StudioProjects/percently-android/core/build/intermediates/res/merged/release/drawable-ldrtl-xxhdpi-v17/abc_ic_menu_copy_mtrl_am_alpha.png",
+        "source": "/Users/marc/.gradle/caches/transforms-2/files-2.1/cfdb390997c7a1b7a24d9b7d0db3580c/appcompat-1.1.0/res/drawable-ldrtl-xxhdpi-v17/abc_ic_menu_copy_mtrl_am_alpha.png"
+    }
+]

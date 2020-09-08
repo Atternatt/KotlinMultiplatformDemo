@@ -1,0 +1,2 @@
+com/m2f/IMDB/core/BuildConfig.java
+ com.m2f.IMDB.core.BuildConfig

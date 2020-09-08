@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/marc/StudioProjects/percently-android/core/build/intermediates/res/merged/release/layout-watch-v20/abc_alert_dialog_title_material.xml",
+        "source": "/Users/marc/.gradle/caches/transforms-2/files-2.1/cfdb390997c7a1b7a24d9b7d0db3580c/appcompat-1.1.0/res/layout-watch-v20/abc_alert_dialog_title_material.xml"
+    },
+    {
+        "merged": "/Users/marc/StudioProjects/percently-android/core/build/intermediates/res/merged/release/layout-watch-v20/abc_alert_dialog_button_bar_material.xml",
+        "source": "/Users/marc/.gradle/caches/transforms-2/files-2.1/cfdb390997c7a1b7a24d9b7d0db3580c/appcompat-1.1.0/res/layout-watch-v20/abc_alert_dialog_button_bar_material.xml"
+    }
+]

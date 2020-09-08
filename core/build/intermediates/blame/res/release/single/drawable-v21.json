@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/Users/marc/StudioProjects/percently-android/core/build/intermediates/res/merged/release/drawable-v21/abc_btn_colored_material.xml",
+        "source": "/Users/marc/.gradle/caches/transforms-2/files-2.1/cfdb390997c7a1b7a24d9b7d0db3580c/appcompat-1.1.0/res/drawable-v21/abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "/Users/marc/StudioProjects/percently-android/core/build/intermediates/res/merged/release/drawable-v21/abc_dialog_material_background.xml",
+        "source": "/Users/marc/.gradle/caches/transforms-2/files-2.1/cfdb390997c7a1b7a24d9b7d0db3580c/appcompat-1.1.0/res/drawable-v21/abc_dialog_material_background.xml"
+    },
+    {
+        "merged": "/Users/marc/StudioProjects/percently-android/core/build/intermediates/res/merged/release/drawable-v21/abc_action_bar_item_background_material.xml",
+        "source": "/Users/marc/.gradle/caches/transforms-2/files-2.1/cfdb390997c7a1b7a24d9b7d0db3580c/appcompat-1.1.0/res/drawable-v21/abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "/Users/marc/StudioProjects/percently-android/core/build/intermediates/res/merged/release/drawable-v21/abc_edit_text_material.xml",
+        "source": "/Users/marc/.gradle/caches/transforms-2/files-2.1/cfdb390997c7a1b7a24d9b7d0db3580c/appcompat-1.1.0/res/drawable-v21/abc_edit_text_material.xml"
+    },
+    {
+        "merged": "/Users/marc/StudioProjects/percently-android/core/build/intermediates/res/merged/release/drawable-v21/abc_list_divider_material.xml",
+        "source": "/Users/marc/.gradle/caches/transforms-2/files-2.1/cfdb390997c7a1b7a24d9b7d0db3580c/appcompat-1.1.0/res/drawable-v21/abc_list_divider_material.xml"
+    },
+    {
+        "merged": "/Users/marc/StudioProjects/percently-android/core/build/intermediates/res/merged/release/drawable-v21/notification_action_background.xml",
+        "source": "/Users/marc/.gradle/caches/transforms-2/files-2.1/cf7e4cbbe3c2660f357436242042e1e1/core-1.1.0/res/drawable-v21/notification_action_background.xml"
+    }
+]
