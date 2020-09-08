@@ -1,16 +1,16 @@
 package com.m2f.IMDB.core.data
 
-/*import com.harmony.kotlin.data.datasource.DeleteDataSource
+import com.harmony.kotlin.data.datasource.DeleteDataSource
 import com.harmony.kotlin.data.datasource.GetDataSource
 import com.harmony.kotlin.data.datasource.PutDataSource
 import com.harmony.kotlin.data.error.DataNotFoundException
 import com.harmony.kotlin.data.query.KeyQuery
-import com.harmony.kotlin.data.query.Query*/
+import com.harmony.kotlin.data.query.Query
 
 class DeviceStorageDataSource<T>(
     private val deviceStorageManager: DeviceStorageManager,
     private val prefix: String = ""
-){} /*: GetDataSource<T>, PutDataSource<T>, DeleteDataSource {
+): GetDataSource<T>, PutDataSource<T>, DeleteDataSource {
 
   override suspend fun get(query: Query): T =
       when (query) {
@@ -69,4 +69,4 @@ class DeviceStorageDataSource<T>(
 
   private fun addPrefixTo(key: String) = if (prefix.isEmpty()) key else "$prefix.$key"
 
-}*/
+}

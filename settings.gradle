@@ -1,6 +1,6 @@
 rootProject.name = "IMDB"
 include ':app'
 include ':core'
-//include ':harmony-kotlin'
+include ':harmony-kotlin'
 
-//project(':harmony-kotlin').projectDir = new File('harmony-kotlin/common')
+project(':harmony-kotlin').projectDir = new File('harmony-kotlin/common')
