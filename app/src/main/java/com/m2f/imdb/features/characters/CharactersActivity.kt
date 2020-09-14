@@ -9,7 +9,7 @@ import com.m2f.IMDB.core.features.characters.presentation.CharactersPresenter
 import com.m2f.imdb.R
 import com.m2f.imdb.common.showGenericErrorDialog
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_characters.*
 import javax.inject.Inject
 
 @AndroidEntryPoint
@@ -22,13 +22,20 @@ class CharactersActivity : AppCompatActivity(), CharactersPresenter.View {
     @Inject
     lateinit var coreComponent: CoreComponent
 
-    private val presenter: CharactersPresenter by lazy { coreComponent.charactersComponent().charactersPresenter(this) }
+    private val presenter: CharactersPresenter by lazy {
+        coreComponent.charactersComponent().charactersPresenter(this)
+    }
+
+    private val characterAdapter: CharacterAdapter by lazy { CharacterAdapter { character ->
+        //todo: show details of the character
+    } }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_characters)
 
         presenter.onActionRetrieveCharacters(false)
+        list_characters.adapter = characterAdapter
 
         swiperefresh.setOnRefreshListener {
             presenter.onActionRetrieveCharacters(true)
@@ -38,6 +45,7 @@ class CharactersActivity : AppCompatActivity(), CharactersPresenter.View {
     override fun onEventCharactersRetrieved(characterList: List<Character>) {
         Log.d(TAG, characterList.size.toString())
         swiperefresh.isRefreshing = false
+        characterAdapter.initData(characterList)
     }
 
     override fun onEventFailedToRetrieveCharacters(ex: Exception) {
