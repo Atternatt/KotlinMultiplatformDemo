@@ -13,5 +13,5 @@ data class ApiResult(
     val attributionHTML: String,
     val etag: String,
     @SerialName("data")
-    val _data: DataEntity
+    val _data: DataEntity?
 )

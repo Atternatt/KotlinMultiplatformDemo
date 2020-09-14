@@ -2,6 +2,7 @@ package com.m2f.IMDB.core.features.characters.data
 
 import com.harmony.kotlin.data.datasource.GetDataSource
 import com.harmony.kotlin.data.datasource.network.DefaultGenericNetworkErrorMapper
+import com.harmony.kotlin.data.error.DataNotFoundException
 import com.harmony.kotlin.data.error.QueryNotSupportedException
 import com.harmony.kotlin.data.mapper.Mapper
 import com.harmony.kotlin.data.query.Query
@@ -28,7 +29,7 @@ class GetCharactersNetworkDataSource(
     override suspend fun getAll(query: Query): List<CharacterEntity> = when (query) {
         is CharactersQuery -> try {
             val result: ApiResult = with(networkConfiguration) {
-                val r = httpClient.get<String>(topCelebritiesIds) {
+                val r = httpClient.get<String>(actors) {
                     val now = DateTime.nowUnix()
                     parameter("ts", now)
                     parameter("apikey", Config.PUBLIC_API_KEY)
@@ -36,7 +37,11 @@ class GetCharactersNetworkDataSource(
                 }
                 json.decodeFromString(r)
             }
-            TODO()
+            if(result.code == 200) {
+                result._data?.results!!
+            } else {
+                throw DataNotFoundException()
+            }
         } catch (ex: ClientRequestException) {
             throw errorMapper.map(ex)
         }
