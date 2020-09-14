@@ -3,9 +3,11 @@ package com.harmony.kotlin.data.mapper
 /**
  * Interface to map an object type to another object type
  */
-interface Mapper<in From, out To> {
+interface Mapper<in From, out To>: (From) -> To {
 
   fun map(from: From): To
+
+  override operator fun invoke(from: From): To = map(from)
 }
 
 /**
