@@ -10,8 +10,6 @@ android {
     compileSdkVersion 29
     buildToolsVersion "29.0.3"
 
-    def keys = rootProject.ext.keys
-
     defaultConfig {
         applicationId "com.m2f.imdb"
         minSdkVersion 29
@@ -26,16 +24,10 @@ android {
         debug {
             applicationIdSuffix ".debug"
             debuggable true
-            buildConfigField "String", "HOST", keys.host
-            buildConfigField "String", "ENDPOINT", keys.apiEndpoint
-            buildConfigField "String", "API_KEY", keys.apiKey
         }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            buildConfigField "String", "HOST", keys.host
-            buildConfigField "String", "ENDPOINT", keys.apiEndpoint
-            buildConfigField "String", "API_KEY", keys.apiKey
         }
     }
     packagingOptions {

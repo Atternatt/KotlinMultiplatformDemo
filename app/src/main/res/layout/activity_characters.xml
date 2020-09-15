@@ -10,7 +10,9 @@
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:id="@+id/swiperefresh"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-82dp"
+        tools:layout_editor_absoluteY="-181dp">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/list_characters"
@@ -18,7 +20,7 @@
             android:layout_height="match_parent"
             app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
             app:spanCount="2"
-            tools:listitem="@layout/row_character"/>
+            tools:listitem="@layout/row_character" />
 
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 

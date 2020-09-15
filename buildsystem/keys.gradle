@@ -1,7 +1,0 @@
-ext {
-    keys = [
-            apiEndpoint: '"https://imdb8.p.rapidapi.com"',
-            host       : '"imdb8.p.rapidapi.com"',
-            apiKey     : '"114fa932damshf90dd8c63f5bd1fp1391afjsnd27f89ec48c5"',
-    ]
-}
